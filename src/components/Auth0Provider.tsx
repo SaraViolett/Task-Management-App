@@ -9,9 +9,9 @@ const Auth0ProviderWithNavigate: React.FC<Auth0ProviderWithNavigateProps> = ({
   children,
 }) => {
   const navigate = useNavigate();
-  const domain = "dev-hruy4p8rtwlh5bme.us.auth0.com";
-  const clientId = "wWiansSkogQMlUzjQMNSUN6HSnyT3wGG" ;
-  const redirectUri = "http://localhost:5173/dashboard";
+  const domain = "";// add the domain from Auth0 once you create an Auth0 account
+  const clientId = "" ; // add the clientID from Auth0
+  const redirectUri = "http://localhost:5173/dashboard"; //Make sure this matches with Autho settings
 
   const onRedirectCallback = (appState?: { returnTo?: string }) => {
     navigate((appState && appState.returnTo) || window.location.pathname);

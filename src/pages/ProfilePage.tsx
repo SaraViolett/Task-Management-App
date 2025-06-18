@@ -24,13 +24,7 @@ const ProfilePage: React.FC = () =>{
                         <h1>Profile Page</h1>
                         {user?.picture && <img src={user.picture} alt={user.name} />}
                         <h3>{user.name}</h3>
-                        <div>
-                            {
-                                Object.keys(user).map((objKey, index) => 
-                                    <p key={index}><b>{objKey}</b>: {user[objKey]}</p>                            
-                                )
-                            }
-                        </div>
+                        <h5>{user.email}</h5>
                     </Col>
                 </Container> 
         </div>

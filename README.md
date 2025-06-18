@@ -1,8 +1,8 @@
-# Task Away - Task Management App
+# Task Away! - Task Management App
 
 ## Overview
 
-**Task Away** is a productivity-focused task management application built with React, TypeScript, and Bootstrap. It allows users to create, view, edit, and delete tasks, with authentication powered by Auth0. The app features a responsive UI, persistent state, and a modular architecture for easy maintenance and scalability.
+**Task Away!** is a productivity-focused task management application built with React, TypeScript, and Bootstrap. It allows users to create, view, edit, and delete tasks, with authentication powered by Auth0. The app features a responsive UI, persistent state, and a modular architecture for easy maintenance and scalability.
 
 ---
 
@@ -48,8 +48,8 @@ src/
 ### 1. Clone the Repository
 
 ```sh
-git clone https://github.com/your-username/task-away.git
-cd task-away
+git clone https://github.com/SaraViolett/Task-Management-App.git
+cd Task-Management-App
 ```
 
 ### 2. Install Dependencies
@@ -61,22 +61,18 @@ npm install
 ### 3. Configure Auth0
 
 - Create a free Auth0 account at [auth0.com](https://auth0.com/).
-- Create a new Application and note your **Domain** and **Client ID**.
-- Create a `.env` file in the root directory and add:
-
-  ```
-  REACT_APP_AUTH0_DOMAIN=your-auth0-domain
-  REACT_APP_AUTH0_CLIENT_ID=your-auth0-client-id
-  ```
+- Create a new Single Page Application, name the app "ReactAuth0", and note your **Domain** and **Client ID**.
+- Navigate to the `Auth0Provider.tsx` file in the components folder.
+- Fill your **Domain** and **Client ID** from Auth0.com to blank domain and clientID string objects.
+- Add allowed URLs: `http://localhost:5173`
+- Add allowed callback URLs: `http://localhost:5173/dashboard`
+ 
 
 ### 4. Start the Development Server
 
 ```sh
-npm start
+npm run dev
 ```
-
-- The app will be available at [http://localhost:3000](http://localhost:3000).
-
 ---
 
 ## Usage
